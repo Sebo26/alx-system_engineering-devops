@@ -5,3 +5,4 @@
 4. Display the last ten lines of file /etc/passwd
 5. Display the first ten lines of file /etc/passwd
 6. Display the third line of file iacta
+7. Creates a file \*\\'"Best School"\'\\*$\?\*\*\*\*\*:) with text Best School
