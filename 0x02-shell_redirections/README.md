@@ -3,4 +3,4 @@
 2. Display contents of file /etc/passwd
 3. Display content of two files /etc/passwd and /etc/hosts
 4. Display the last ten lines of file /etc/passwd
-
+5. Display the first ten lines of file /etc/passwd
