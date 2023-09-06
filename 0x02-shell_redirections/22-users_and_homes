@@ -1,2 +1,2 @@
 #!/bin/bash
-ls --sort=users /etc/passwd | tr "\n" ":" 
+ls -l --sort=users /etc/passwd | tr "\n" ":" 
