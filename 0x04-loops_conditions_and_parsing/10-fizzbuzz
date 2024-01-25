@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#Display numbers 1 to 100 with fizzbuzz, fizz and buzz printed conditionally.
+count=0
+while [ $count -le 100 ];
+do
+	if [ $((count % 3)) -eq 0 ] && [ $((count % 5)) -eq 0 ];
+	then
+		echo "FizzBuzz"
+	elif [ $((count % 3)) -eq 0 ];
+	then
+		echo "Fizz"
+	elif [ $((count % 5)) -eq 0 ];
+	then
+		echo "Buzz"
+	else
+		echo $count
+	fi
+	((count++))
+done
