@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times but "Hi" in line 9
-count=0
+count=1
 
 while [ $count -le 10 ];
 do
 	echo "Best School"
 	let count=count+1
-	if [ $count -eq 9 ];
+	if [ $count -e 9 ];
 	then
 		echo "Hi"
 	fi
