@@ -1,17 +1,16 @@
 #!/usr/bin/env bash
 #Displays "bad luck" at line 4 and "good luck" at line 8,the rest "Best School"
 count=1
-
-while [ $count -le 10 ];
+while [ "$count" -le 10 ];
 do
-	if [ $count -eq 4 ];
+	if [ "$count" -eq 4 ];
 	then
 		echo "bad luck"
-	elif [ $count -eq 8 ]
+	elif [ "$count" -eq 8 ]
 	then
 		echo "good luck"
 	else
 		echo "Best School"
 	fi
-	let count=count+1
+	count=$(( count + 1))
 done
