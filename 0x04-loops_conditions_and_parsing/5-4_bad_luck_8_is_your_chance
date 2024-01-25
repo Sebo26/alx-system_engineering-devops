@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-: 'This script is displaying "bad luck" at line 4 and "good luck" at line 8
-and the rest "Best School"'
+#Displays "bad luck" at line 4 and "good luck" at line 8,the rest "Best School"
 count=1
 
 while [ $count -le 10 ];
