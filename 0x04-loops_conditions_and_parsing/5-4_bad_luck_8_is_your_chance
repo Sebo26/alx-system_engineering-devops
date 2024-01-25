@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# This script is displaying "Best School" 10 times but "Hi" in line 9
+: 'This script is displaying "bad luck" at line 4 and "good luck" at line 8
+and the rest "Best School"'
 count=1
 
 while [ $count -le 10 ];
 do
 	echo "Best School"
-	let count=count+1
 	if [ $count -eq 4 ];
 	then
 		echo "bad luck"
@@ -13,4 +13,5 @@ do
 	then
 		echo "good luck"
 	fi
+	let count=count+1
 done
