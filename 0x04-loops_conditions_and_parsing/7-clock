@@ -2,13 +2,13 @@
 #Displays hours of the clock and minutes between them
 count=0
 minutes=1
-while [ $count -le 12 ];
+while [ "$count" -le 12 ];
 do
-	echo "Hour: $count"
+	echo "Hour: "$count""
 	while [ $minutes -le 59 ];
 	do
 		echo "$minutes"
-		let minutes=minutes+1
+		minutes=$(( minutes + 1 ))
 	done
 	count=$(( count + 1 ))
 done
