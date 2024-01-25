@@ -6,8 +6,11 @@ while [ $count -le 10 ];
 do
 	echo "Best School"
 	let count=count+1
-	if [ $count -e 9 ];
+	if [ $count -eq 4 ];
 	then
-		echo "Hi"
+		echo "bad luck"
+	elif [ $count -eq 8 ]
+	then
+		echo "good luck"
 	fi
 done
