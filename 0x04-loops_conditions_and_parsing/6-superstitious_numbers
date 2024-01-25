@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#Displays "bad luck" at line 4 and "good luck" at line 8,the rest "Best School"
+#Displays numbers 1 to 20 with strings inbetween.
 count=1
 
 while [ $count -le 20 ];
