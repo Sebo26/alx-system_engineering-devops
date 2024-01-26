@@ -5,7 +5,7 @@ minutes=1
 while [ "$count" -lt 12 ];
 do
 	count=$(( count + 1 ))
-	echo "Hour: "$count""
+	echo "Hour: $count"
 	while [ $minutes -le 59 ];
 	do
 		echo "$minutes"
