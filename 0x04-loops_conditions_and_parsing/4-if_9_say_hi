@@ -6,7 +6,6 @@ do
 	echo "Best School"
 	if [ $count -eq 9 ]
 	then
-		echo "Best School"
 		echo "Hi"
 	fi
 	count=$(( count + 1 ))
