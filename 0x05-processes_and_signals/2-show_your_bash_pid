@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Gets bash processes containing the bash word.
+# shellcheck disable=SC2009
+ps --forest -p 10
