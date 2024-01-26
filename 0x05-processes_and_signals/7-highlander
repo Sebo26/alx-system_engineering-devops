@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#displays "To infinity and beyond" indefinitely.
+count=0
+while true
+do
+        echo "To infinity and beyond"
+        sleep 2
+	if trap | grep -q INT
+	then
+		echo "I am invincible!!!"
+	fi
+        count=$(( count + 1 ))
+done
