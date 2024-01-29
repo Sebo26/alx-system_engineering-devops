@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #Display numbers 1 to 100 with fizzbuzz, fizz and buzz printed conditionally.
-count=0
+count=1
 while [ $count -le 100 ];
 do
 	if [ $((count % 3)) -eq 0 ] && [ $((count % 5)) -eq 0 ];
