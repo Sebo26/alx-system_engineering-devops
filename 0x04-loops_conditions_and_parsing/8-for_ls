@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #Lists the names of files in current directory without the number.
 
-for i in $( ls );
+for filename in *
 do
-	echo "$( cut -d "-" -f 2 0x04-loops_conditions_and_parsing )"
+	echo "$( cut -d "-" -f 2 <<< "$filename" )"
 done
