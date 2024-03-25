@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# transfers a file from our client to a server
+file="$1"
+IP="$2"
+User="$3"
+key="$4"
+
+if [ "$#" -lt 4 ]; then
+    usage
+fi
+
+scp -o StrictHostKeyChecking=no -i "$key" "$file" "$User@$IP:~/"
