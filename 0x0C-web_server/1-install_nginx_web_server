@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# install nginx
 apt-apt-get update
 apt-get install nginx -y
 curl web-01 echo "Hello World!"
