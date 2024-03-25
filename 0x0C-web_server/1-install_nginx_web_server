@@ -3,3 +3,5 @@
 apt-apt-get update
 apt-get install nginx -y
 curl web-01 echo "Hello World!"
+pkill -9 nginx
+nginx -g 'daemon off;'
