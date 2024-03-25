@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+CNAME="example.com"
+REDIRECT_URL="https://example.com/new-location"
+HTTP_STATUS="301 Moved Permanently"
+echo "$CNAME /redirect_me \"$HTTP_STATUS\"" >> /etc/nginx/sites-available/default
