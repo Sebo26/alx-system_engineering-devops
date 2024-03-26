@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Nginx server so that /redirect_me is redirecting to another page
 CNAME="example.com"
 REDIRECT_URL="https://example.com/new-location"
 HTTP_STATUS="301 Moved Permanently"
