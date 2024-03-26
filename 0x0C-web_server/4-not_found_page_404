@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+IP="$1"
+if [ "$IP" = "not found" ]; then
+    echo "Ceci n'est pas une page"
+fi
+pkill -9 nginx
+nginx -g 'daemon off;'
