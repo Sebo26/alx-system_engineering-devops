@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
 # Bash to simplify number 0
 if ! command -v nginx &> /dev/null
-then
-	exit 1
 fi
-if ! pgrep nginx &> /dev/null
-then
-	service nginx status | grep -q "not running"
-	sudo service nginx start
-fi
+sudo service nginx start
