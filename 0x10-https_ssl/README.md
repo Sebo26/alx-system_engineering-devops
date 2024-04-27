@@ -1,1 +1,0 @@
-https and ssl certificate

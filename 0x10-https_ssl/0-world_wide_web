@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-# Bash script that will display information about subdomains.
-local domain="$1"
-local subdomain="$2"
-local record_type=$(dig +short -t CNAME "$subdomain.$domain" | awk '{ if ($0 ~ /^$/ ) print "A"; else print "CNAME" }')
-local destination=$(dig +short "$subdomain.$domain" | awk '{ print $1 }')
