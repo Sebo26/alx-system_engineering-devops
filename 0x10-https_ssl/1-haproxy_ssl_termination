@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Terminate SSL on HAproxy
+
+sudo /opt/certbot/bin/pip install certbot certbot-nginx
+sudo certbot certonly --standalone -d dig 54.210.47.110
+frontend www-https
+    bind *:443 ssl crt /etc/letsencrypt/live/yourdomain.com/fullchain.pem
+    reqadd X-Forwarded-Proto:\ https
+    default_backend www-backend
+
+backend www-backend
+    server web-server 127.0.0.1:80
+sudo service haproxy restart
