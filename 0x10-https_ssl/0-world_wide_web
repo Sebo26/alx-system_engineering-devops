@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+SUB_DOMAIN=("www" "lb-01" "web-01" "web-02")
+DESTINATION=("34.229.136.69" "100.25.133.185" "3.85.136.186")
+RECORD_TYPE="A"
+
+for ((i=0; i<${#SUB_DOMAIN[@]}; i++)); do
+    echo "${SUB_DOMAIN[i]} ${RECORD_TYPE} ${DESTINATION[i]}"
+done | awk '{printf "The subdomain %s is a %s record and points to %s\n", $1, $2, $3}'
+
