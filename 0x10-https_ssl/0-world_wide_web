@@ -5,6 +5,8 @@ DESTINATION=("34.229.136.69" "100.25.133.185" "3.85.136.186")
 RECORD_TYPE="A"
 
 for ((i=0; i<${#SUB_DOMAIN[@]}; i++)); do
-    echo "${SUB_DOMAIN[i]} ${RECORD_TYPE} ${DESTINATION[i]}"
+	if [[ "${SUB_DOMAIN[i]}" = "www" ]]; then
+		echo "${SUB_DOMAIN[i]} ${RECORD_TYPE} ${DESTINATION[i]}"
+	fi
 done | awk '{printf "The subdomain %s is a %s record and points to %s\n", $1, $2, $3}'
 
