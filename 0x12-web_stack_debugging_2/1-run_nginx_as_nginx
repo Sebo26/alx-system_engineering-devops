@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Run Nginx as Nginx
+nginx -s stop
+cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf.backup
+sed -i 's/user\s*nginx;/user nginx;/' /etc/nginx/nginx.conf
+rm -f /etc/nginx/conf.d/*
+cat <<EOF > /etc/nginx/conf.d/default.conf
+server {
+    listen 8080 default_server;
+    listen [::]:8080 default_server;
+
+    # Root directory of your website
+    root /var/www/html;
+    index index.html index.htm;
+
+    # Other configuration directives...
+}
+EOF
+nginx
