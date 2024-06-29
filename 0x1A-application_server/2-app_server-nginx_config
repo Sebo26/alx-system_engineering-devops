@@ -1,6 +1,6 @@
 server {
     listen 80;
-    ubuntu 18.209.180.90;
+    18.209.180.90;
 
     location /airbnb-onepage/ {
         proxy_pass http://127.0.0.1:5000;
